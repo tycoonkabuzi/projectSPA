@@ -3,6 +3,7 @@
 $color-primary: #1ba4ce;
 $color-secondary: #473452;
 $color-main-backgrounds: #30383b;
+$color-primary-opacity: #1ba4cecd;
 // font sizes
 //---------------------------------------
 $primary-font-size: 16px;
@@ -13,4 +14,9 @@ $box-titles-font-size: 22px;
 
 //Box shadow on boxes in Procedures and Blog sections: 0 5px 20px #f0f0f0;
 // paddings
-$standard-padding: 20px;
+$standard-padding: 50px;
+$standard-margin: 150px;
+$padding-buttons: 40px;
+
+//text spacing
+$text-spacing: 30px;

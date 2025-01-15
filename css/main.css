@@ -1,16 +1,16 @@
 .btn-base, .btn-secondary, .btn-primary {
   font-size: 13px;
   border: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   color: white;
 }
 
 .btn-secondary {
   text-transform: uppercase;
-  border-radius: 40px;
+  border-radius: 30px;
 }
 
 .btn-primary {
@@ -42,7 +42,8 @@
 
 body {
   font-family: "Roboto", serif;
-  color: #5e6d73;
+  color: #75888f;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -72,6 +73,7 @@ body {
 
 .text-paragraph {
   font-size: 16px;
+  line-height: 30px;
 }
 
 .nav {
@@ -118,11 +120,56 @@ body {
 }
 .header-texts-buttons {
   display: flex;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .header-image {
   width: 40%;
 }
 .header-image img {
   width: 100%;
+}
+
+.about-texts {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.about-texts p {
+  margin-bottom: 50px;
+}
+.about-texts img {
+  width: 10%;
+  display: block;
+  margin: auto;
+}
+.about-images {
+  display: flex;
+  margin-top: 150px;
+  width: 100%;
+}
+.about-images-item {
+  position: relative;
+}
+.about-images-item img {
+  width: 100%;
+}
+.about-images-item:hover::before {
+  position: absolute;
+  background: url("../../img/icons/icon-spa.png") no-repeat center;
+  background-position-y: 150px;
+  background-size: 60px;
+  content: "Body treatment";
+  background-color: rgba(27, 164, 206, 0.8039215686);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  font-family: "Bellota", serif;
+  color: #30383b;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

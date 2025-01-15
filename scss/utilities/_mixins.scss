@@ -1,6 +1,7 @@
 @mixin Roboto {
   font-family: "Roboto", serif;
-  color: lighten($color-main-backgrounds, 20);
+  color: lighten($color-main-backgrounds, 30);
+  font-weight: 300;
 }
 
 @mixin Bellota {
