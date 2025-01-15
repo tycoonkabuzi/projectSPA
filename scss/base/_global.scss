@@ -66,6 +66,10 @@ body {
   &-texts {
     width: 33%;
     padding-top: 15%;
+    &-buttons {
+      display: flex;
+      padding-top: $standard-padding;
+    }
   }
   &-image {
     width: 40%;
