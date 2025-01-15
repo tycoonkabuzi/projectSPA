@@ -1,4 +1,4 @@
-.btn-base, .btn-secondary, .btn-primary {
+.btn-submit, .btn-base, .btn-secondary, .btn-primary {
   font-size: 13px;
   border: none;
   padding-left: 40px;
@@ -7,11 +7,11 @@
   padding-top: 20px;
   color: white;
 }
-.btn-base:hover, .btn-secondary:hover, .btn-primary:hover {
+.btn-submit:hover, .btn-base:hover, .btn-secondary:hover, .btn-primary:hover {
   background-color: #30383b;
 }
 
-.btn-secondary {
+.btn-submit, .btn-secondary {
   text-transform: uppercase;
   border-radius: 30px;
 }
@@ -51,6 +51,16 @@
 .btn-base:hover .btn-base-icon {
   border: solid 1px #1ba4ce;
   transform: rotate(360deg);
+}
+
+.btn-submit {
+  background-color: white;
+  color: #30383b;
+  display: flex;
+  margin-left: 10%;
+}
+.btn-submit:hover {
+  color: white;
 }
 
 body {
@@ -270,4 +280,58 @@ body {
 .team-members-member-text-icons-facebook-icon:hover, .team-members-member-text-icons-instagram-icon:hover, .team-members-member-text-icons-twitter-icon:hover {
   background-color: #1ba4ce;
   color: white;
+}
+
+.appointment {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+  gap: 0;
+}
+.appointment-img {
+  width: 40%;
+}
+.appointment-form {
+  background-color: #1ba4ce;
+}
+.appointment-form form {
+  padding-top: 150px;
+  width: 80%;
+}
+.appointment-form textarea {
+  width: 85%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #1ba4ce;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.appointment-form textarea::placeholder {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.appointment-form select,
+.appointment-form input {
+  width: 40%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #1ba4ce;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.appointment-form select::placeholder,
+.appointment-form input::placeholder {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

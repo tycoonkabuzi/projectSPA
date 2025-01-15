@@ -42,3 +42,19 @@
 @mixin box-shadow {
   box-shadow: 1px 1px 20px lighten($color-main-backgrounds, 70);
 }
+@mixin contact-inputs($the-width) {
+  width: $the-width;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: $color-primary;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  &::placeholder {
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+}

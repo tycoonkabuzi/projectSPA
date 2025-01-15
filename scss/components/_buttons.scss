@@ -41,3 +41,14 @@
     }
   }
 }
+.btn-submit {
+  @extend %btn;
+  @extend %border-radius;
+  background-color: white;
+  color: $color-main-backgrounds;
+  display: flex;
+  margin-left: 10%;
+  &:hover {
+    color: white;
+  }
+}

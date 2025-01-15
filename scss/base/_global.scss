@@ -194,4 +194,27 @@ body {
     }
   }
 }
-//------------------------------------------------------------Section Appointement ------------------------------------------
+//------------------------------------------------------------Section Appointment ------------------------------------------
+.appointment {
+  padding-top: $standard-margin;
+  @include box-flex;
+  gap: 0;
+  &-img {
+    width: 40%;
+  }
+  &-form {
+    background-color: $color-primary;
+    form {
+      padding-top: $standard-margin;
+      width: 80%;
+    }
+
+    textarea {
+      @include contact-inputs(85%);
+    }
+    select,
+    input {
+      @include contact-inputs(40%);
+    }
+  }
+}
