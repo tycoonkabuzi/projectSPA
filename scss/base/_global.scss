@@ -18,6 +18,7 @@ body {
   @include Bellota;
   text-transform: uppercase;
   font-size: 15px;
+  color: lighten($color-main-backgrounds, 25);
 }
 .title-text-xs-uppercase {
   @include Roboto;
@@ -27,6 +28,7 @@ body {
 .text-paragraph {
   font-size: 16px;
   line-height: $text-spacing;
+  color: lighten($color-main-backgrounds, 25);
 }
 //------------------------------------------------------------Nav------------------------------------------
 .nav {
@@ -48,8 +50,6 @@ body {
     display: flex;
     gap: 50px;
     width: 53%;
-    li {
-    }
     a {
       text-decoration: none;
       color: $color-main-backgrounds;
@@ -72,6 +72,7 @@ body {
     margin-top: 5%;
   }
   &-texts {
+    color: $color-main-backgrounds;
     width: 33%;
     padding-top: 15%;
     &-buttons {
@@ -223,7 +224,7 @@ body {
     }
   }
 }
-
+//------------------------------------------------------------Section Appointment ------------------------------------------
 .blog {
   @include intro-text(40%);
   &-article {
@@ -240,4 +241,44 @@ body {
       }
     }
   }
+}
+//------------------------------------------------------------Section Get in touch ------------------------------------------
+.contact {
+  padding-top: $standard-padding;
+  background-color: $color-primary;
+  @include intro-text(40%);
+  color: white;
+  p {
+    color: white;
+  }
+  &-container {
+    @include box-flex;
+  }
+  &-container {
+    &-phisical {
+      width: 17%;
+
+      &-address,
+      &-email,
+      &-phone {
+        @include box-flex;
+        justify-content: left;
+        align-items: center;
+        gap: 15%;
+
+        &-text {
+          text-align: left;
+        }
+      }
+    }
+  }
+  select,
+  input {
+    @include contact-inputs(68%);
+  }
+
+  textarea {
+    @include contact-inputs(68%);
+  }
+  padding-bottom: $standard-padding;
 }

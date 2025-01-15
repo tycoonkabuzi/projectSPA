@@ -72,26 +72,23 @@ body {
 
 .title-text-bg {
   font-family: "Bellota", serif;
-  color: #30383b;
   font-size: 50px;
 }
 
 .title-text-md {
   font-family: "Bellota", serif;
-  color: #30383b;
   font-size: 42px;
 }
 
 .title-text-sm {
   font-family: "Bellota", serif;
-  color: #30383b;
 }
 
 .title-text-sm-uppercase {
   font-family: "Bellota", serif;
-  color: #30383b;
   text-transform: uppercase;
   font-size: 15px;
+  color: #697b81;
 }
 
 .title-text-xs-uppercase {
@@ -105,6 +102,7 @@ body {
 .text-paragraph {
   font-size: 16px;
   line-height: 30px;
+  color: #697b81;
 }
 
 .nav {
@@ -146,6 +144,7 @@ body {
   margin-top: 5%;
 }
 .header-texts {
+  color: #30383b;
   width: 33%;
   padding-top: 15%;
 }
@@ -160,6 +159,9 @@ body {
   width: 100%;
 }
 
+.about {
+  color: #30383b;
+}
 .about-texts {
   width: 60%;
   margin: auto;
@@ -199,12 +201,14 @@ body {
   justify-content: center;
   gap: 1px;
   font-family: "Bellota", serif;
-  color: #30383b;
   color: white;
   font-size: 22px;
   font-weight: 400;
 }
 
+.popular {
+  color: #30383b;
+}
 .popular-texts {
   width: 40%;
   margin: auto;
@@ -232,6 +236,9 @@ body {
   box-shadow: 1px 1px 20px #e6e9ea;
 }
 
+.team {
+  color: #30383b;
+}
 .team-texts {
   width: 40%;
   margin: auto;
@@ -344,6 +351,9 @@ body {
   padding-bottom: 10px;
 }
 
+.blog {
+  color: #30383b;
+}
 .blog-texts {
   width: 40%;
   margin: auto;
@@ -369,4 +379,80 @@ body {
 }
 .blog-article-item:hover {
   box-shadow: 1px 1px 20px #e6e9ea;
+}
+
+.contact {
+  padding-top: 50px;
+  background-color: #1ba4ce;
+  color: #30383b;
+  color: white;
+  padding-bottom: 50px;
+}
+.contact-texts {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.contact-texts p {
+  margin-bottom: 50px;
+}
+.contact p {
+  color: white;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+}
+.contact-container-phisical {
+  width: 17%;
+}
+.contact-container-phisical-address, .contact-container-phisical-email, .contact-container-phisical-phone {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+  justify-content: left;
+  align-items: center;
+  gap: 15%;
+}
+.contact-container-phisical-address-text, .contact-container-phisical-email-text, .contact-container-phisical-phone-text {
+  text-align: left;
+}
+.contact select,
+.contact input {
+  width: 68%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #1ba4ce;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.contact select::placeholder,
+.contact input::placeholder {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.contact textarea {
+  width: 68%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #1ba4ce;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.contact textarea::placeholder {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

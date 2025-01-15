@@ -6,9 +6,9 @@
 
 @mixin Bellota {
   font-family: "Bellota", serif;
-  color: $color-main-backgrounds;
 }
 @mixin intro-text($width-value) {
+  color: $color-main-backgrounds;
   &-texts {
     width: $width-value;
     margin: auto;
