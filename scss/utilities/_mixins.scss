@@ -25,6 +25,18 @@
   gap: 20px;
   text-align: center;
 }
+@mixin nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  width: 53%;
+  a {
+    text-decoration: none;
+    color: $color-main-backgrounds;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
 @mixin circled-icon {
   &-icon {
     width: 30px;
