@@ -4,6 +4,7 @@ $color-primary: #1ba4ce;
 $color-secondary: #473452;
 $color-main-backgrounds: #30383b;
 $color-primary-opacity: #1ba4cecd;
+$lighten-box-color: lighten($color-main-backgrounds, 70);
 // font sizes
 //---------------------------------------
 $primary-font-size: 16px;

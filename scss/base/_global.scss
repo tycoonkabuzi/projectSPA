@@ -23,7 +23,7 @@ body {
   font-size: 16px;
   line-height: $text-spacing;
 }
-
+//------------------------------------------------------------Nav------------------------------------------
 .nav {
   display: flex;
   align-items: center;
@@ -53,6 +53,8 @@ body {
     }
   }
 }
+
+//------------------------------------------------------------Header------------------------------------------
 .header {
   overflow: hidden;
   display: flex;
@@ -80,26 +82,24 @@ body {
     }
   }
 }
+
+//------------------------------------------------------------Section About------------------------------------------
 .about {
-  &-texts {
-    width: 60%;
+  @include intro-text(60%);
+  img {
+    width: 10%;
+    display: block;
     margin: auto;
-    text-align: center;
-    p {
-      margin-bottom: $standard-padding;
-    }
-    img {
-      width: 10%;
-      display: block;
-      margin: auto;
-    }
   }
+
   &-images {
     display: flex;
     margin-top: $standard-margin;
     width: 100%;
+
     &-item {
       position: relative;
+
       img {
         width: 100%;
       }
@@ -123,6 +123,29 @@ body {
           font-size: $box-titles-font-size;
           font-weight: 400;
         }
+      }
+    }
+  }
+}
+//------------------------------------------------------------Section popular ------------------------------------------
+.popular {
+  @include intro-text(40%);
+  &-procedures {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    gap: 20px;
+    text-align: center;
+    &-item {
+      width: 20%;
+      border: 1px solid $lighten-box-color;
+      padding: $standard-padding - 25;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        box-shadow: 1px 1px 20px lighten($color-main-backgrounds, 70);
       }
     }
   }

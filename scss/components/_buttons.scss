@@ -6,6 +6,9 @@
   padding-bottom: $padding-buttons - 20;
   padding-top: $padding-buttons - 20;
   color: white;
+  &:hover {
+    background-color: $color-main-backgrounds;
+  }
 }
 %border-radius {
   text-transform: uppercase;
@@ -27,6 +30,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+
   &-icon {
     width: 30px;
     height: 30px;
@@ -34,8 +38,19 @@
     border: solid 1px $color-main-backgrounds;
     display: flex;
     align-items: center;
+    transition: 0.3s ease-in-out;
     i {
       margin: auto;
+    }
+  }
+
+  &:hover {
+    background-color: white;
+    color: $color-primary;
+    cursor: pointer;
+    .btn-base-icon {
+      border: solid 1px $color-primary;
+      transform: rotate(360deg);
     }
   }
 }

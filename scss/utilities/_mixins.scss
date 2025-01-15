@@ -8,3 +8,13 @@
   font-family: "Bellota", serif;
   color: $color-main-backgrounds;
 }
+@mixin intro-text($width-value) {
+  &-texts {
+    width: $width-value;
+    margin: auto;
+    text-align: center;
+    p {
+      margin-bottom: $standard-padding;
+    }
+  }
+}

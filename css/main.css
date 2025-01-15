@@ -7,6 +7,9 @@
   padding-top: 20px;
   color: white;
 }
+.btn-base:hover, .btn-secondary:hover, .btn-primary:hover {
+  background-color: #30383b;
+}
 
 .btn-secondary {
   text-transform: uppercase;
@@ -35,9 +38,19 @@
   border: solid 1px #30383b;
   display: flex;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
 .btn-base-icon i {
   margin: auto;
+}
+.btn-base:hover {
+  background-color: white;
+  color: #1ba4ce;
+  cursor: pointer;
+}
+.btn-base:hover .btn-base-icon {
+  border: solid 1px #1ba4ce;
+  transform: rotate(360deg);
 }
 
 body {
@@ -137,7 +150,7 @@ body {
 .about-texts p {
   margin-bottom: 50px;
 }
-.about-texts img {
+.about img {
   width: 10%;
   display: block;
   margin: auto;
@@ -172,4 +185,31 @@ body {
   color: white;
   font-size: 22px;
   font-weight: 400;
+}
+
+.popular-texts {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.popular-texts p {
+  margin-bottom: 50px;
+}
+.popular-procedures {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+}
+.popular-procedures-item {
+  width: 20%;
+  border: 1px solid #e6e9ea;
+  padding: 25px;
+}
+.popular-procedures-item img {
+  width: 100%;
+}
+.popular-procedures-item:hover {
+  box-shadow: 1px 1px 20px #e6e9ea;
 }/*# sourceMappingURL=main.css.map */
