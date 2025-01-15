@@ -131,12 +131,7 @@ body {
 .popular {
   @include intro-text(40%);
   &-procedures {
-    display: flex;
-    justify-content: center;
-
-    margin: auto;
-    gap: 20px;
-    text-align: center;
+    @include box-flex;
     &-item {
       width: 20%;
       border: 1px solid $lighten-box-color;
@@ -145,8 +140,58 @@ body {
         width: 100%;
       }
       &:hover {
-        box-shadow: 1px 1px 20px lighten($color-main-backgrounds, 70);
+        @include box-shadow;
       }
     }
   }
 }
+//------------------------------------------------------------Section team ------------------------------------------
+.team {
+  @include intro-text(40%);
+  &-members {
+    @include box-flex;
+
+    &-member {
+      position: relative;
+      &-text {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: -40px;
+        width: 80%;
+        height: 55px;
+        overflow: hidden;
+        left: 10%;
+        right: 10%;
+        padding-bottom: $standard-padding;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          bottom: -20px;
+          overflow: block;
+          height: 130px;
+          @include box-shadow;
+        }
+        &-icons {
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          &-facebook,
+          &-instagram,
+          &-twitter {
+            @include circled-icon;
+          }
+          &-facebook,
+          &-instagram,
+          &-twitter {
+            &-icon {
+              &:hover {
+                background-color: $color-primary;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//------------------------------------------------------------Section Appointement ------------------------------------------

@@ -18,3 +18,27 @@
     }
   }
 }
+@mixin box-flex {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+}
+@mixin circled-icon {
+  &-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: solid 1px $color-main-backgrounds;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    i {
+      margin: auto;
+    }
+  }
+}
+@mixin box-shadow {
+  box-shadow: 1px 1px 20px lighten($color-main-backgrounds, 70);
+}

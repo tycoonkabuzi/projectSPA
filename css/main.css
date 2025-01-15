@@ -212,4 +212,62 @@ body {
 }
 .popular-procedures-item:hover {
   box-shadow: 1px 1px 20px #e6e9ea;
+}
+
+.team-texts {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.team-texts p {
+  margin-bottom: 50px;
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+}
+.team-members-member {
+  position: relative;
+}
+.team-members-member-text {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: -40px;
+  width: 80%;
+  height: 55px;
+  overflow: hidden;
+  left: 10%;
+  right: 10%;
+  padding-bottom: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.team-members-member-text:hover {
+  bottom: -20px;
+  overflow: block;
+  height: 130px;
+  box-shadow: 1px 1px 20px #e6e9ea;
+}
+.team-members-member-text-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.team-members-member-text-icons-facebook-icon, .team-members-member-text-icons-instagram-icon, .team-members-member-text-icons-twitter-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: solid 1px #30383b;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.team-members-member-text-icons-facebook-icon i, .team-members-member-text-icons-instagram-icon i, .team-members-member-text-icons-twitter-icon i {
+  margin: auto;
+}
+.team-members-member-text-icons-facebook-icon:hover, .team-members-member-text-icons-instagram-icon:hover, .team-members-member-text-icons-twitter-icon:hover {
+  background-color: #1ba4ce;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
