@@ -94,6 +94,14 @@ body {
   font-size: 15px;
 }
 
+.title-text-xs-uppercase {
+  font-family: "Roboto", serif;
+  color: #75888f;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
 .text-paragraph {
   font-size: 16px;
   line-height: 30px;
@@ -334,4 +342,31 @@ body {
   color: white;
   text-transform: uppercase;
   padding-bottom: 10px;
+}
+
+.blog-texts {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.blog-texts p {
+  margin-bottom: 50px;
+}
+.blog-article {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+}
+.blog-article-item {
+  width: 21%;
+  border: 1px solid #e6e9ea;
+  padding: 25px;
+}
+.blog-article-item img {
+  width: 100%;
+}
+.blog-article-item:hover {
+  box-shadow: 1px 1px 20px #e6e9ea;
 }/*# sourceMappingURL=main.css.map */
