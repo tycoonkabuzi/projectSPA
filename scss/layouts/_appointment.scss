@@ -1,0 +1,38 @@
+.appointment {
+  padding-top: $standard-margin;
+  @include box-flex;
+  gap: 0;
+  @include responsive(768px, 991px) {
+    flex-direction: column;
+  }
+  &-img {
+    width: 40%;
+    @include responsive(768px, 991px) {
+      display: none;
+    }
+  }
+  &-form {
+    background-color: $color-primary;
+    form {
+      padding-top: $standard-margin;
+      width: 80%;
+      @include responsive(768px, 991px) {
+        margin: auto;
+      }
+    }
+
+    textarea {
+      @include contact-inputs(85%);
+      @include responsive(768px, 991px) {
+        width: 100%;
+      }
+    }
+    select,
+    input {
+      @include contact-inputs(40%);
+      @include responsive(768px, 991px) {
+        width: 100%;
+      }
+    }
+  }
+}

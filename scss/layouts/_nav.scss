@@ -1,0 +1,41 @@
+.nav {
+  @include box-flex;
+  text-transform: uppercase;
+  padding-top: 10px;
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  @include responsive(768px, 991px) {
+    padding-right: 5%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+  }
+  &-logo {
+    img {
+      width: 70px;
+    }
+  }
+  &-menu {
+    @include nav-menu;
+    @include responsive(768px, 991px) {
+      display: none;
+    }
+  }
+  &-humberger {
+    width: 70px;
+    &-item {
+      display: hide;
+      width: 70px;
+      height: 10px;
+      background-color: $color-primary;
+      margin-bottom: 10px;
+      @include responsive(768px, 991px) {
+        display: block;
+      }
+    }
+  }
+}

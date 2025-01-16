@@ -1,0 +1,32 @@
+.footer {
+  padding-top: $standard-padding;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: $standard-padding;
+  &-nav {
+    @include box-flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: center;
+    &-logo {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    &-menu {
+      padding-bottom: $standard-padding;
+      @include nav-menu;
+      width: auto;
+      margin: auto;
+
+      justify-content: center;
+
+      a {
+        font-size: $secondary-font-size;
+      }
+    }
+  }
+}

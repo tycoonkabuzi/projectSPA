@@ -1,0 +1,47 @@
+.contact {
+  padding-top: $standard-padding;
+  background-color: $color-primary;
+  @include intro-text(40%);
+  color: white;
+  p {
+    color: white;
+  }
+  &-container {
+    @include box-flex;
+    @include responsive(768px, 991px) {
+      flex-direction: column;
+    }
+  }
+  &-container {
+    &-phisical {
+      width: 17%;
+      @include responsive(768px, 991px) {
+        width: 80%;
+        margin: auto;
+      }
+      &-address,
+      &-email,
+      &-phone {
+        @include box-flex;
+        justify-content: left;
+        align-items: center;
+        gap: 15%;
+        @include responsive(768px, 991px) {
+          gap: 0;
+        }
+        &-text {
+          text-align: left;
+        }
+      }
+    }
+  }
+  select,
+  input {
+    @include contact-inputs(68%);
+  }
+
+  textarea {
+    @include contact-inputs(68%);
+  }
+  padding-bottom: $standard-padding;
+}

@@ -16,6 +16,9 @@
     p {
       margin-bottom: $standard-padding;
     }
+    @include responsive(768px, 991px) {
+      width: 90%;
+    }
   }
 }
 @mixin box-flex {
@@ -68,5 +71,10 @@
     color: white;
     text-transform: uppercase;
     padding-bottom: 10px;
+  }
+}
+@mixin responsive($min-width, $max-width) {
+  @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
   }
 }
