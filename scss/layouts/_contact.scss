@@ -5,13 +5,14 @@
   p {
     color: white;
   }
+
   &-container {
     @include box-flex;
+    align-items: center;
+    margin-top: $standard-padding;
     @include responsive(768px, 991px) {
       flex-direction: column;
     }
-  }
-  &-container {
     &-phisical {
       width: 17%;
       @include responsive(768px, 991px) {
@@ -24,7 +25,7 @@
         @include box-flex;
         justify-content: left;
         align-items: center;
-        gap: 15%;
+
         @include responsive(768px, 991px) {
           gap: 0;
         }
@@ -34,13 +35,6 @@
       }
     }
   }
-  select,
-  input {
-    @include contact-inputs(68%);
-  }
 
-  textarea {
-    @include contact-inputs(68%);
-  }
   padding-bottom: $standard-padding;
 }

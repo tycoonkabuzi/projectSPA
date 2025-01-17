@@ -9,40 +9,9 @@
   gap: 20px;
   text-align: center;
 }
-@mixin nav-menu {
-}
-@mixin circled-icon {
-  &-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    border: solid 1px $color-main-backgrounds;
-    display: flex;
-    align-items: center;
-    transition: 0.3s ease-in-out;
-    i {
-      margin: auto;
-    }
-  }
-}
+
 @mixin box-shadow {
   box-shadow: 1px 1px 20px lighten($color-main-backgrounds, 70);
-}
-@mixin contact-inputs($the-width) {
-  width: $the-width;
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: $color-primary;
-  color: white;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-  &::placeholder {
-    color: white;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-  }
 }
 @mixin responsive($min-width, $max-width) {
   @media only screen and (min-width: $min-width) and (max-width: $max-width) {

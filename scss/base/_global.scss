@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", serif;
   color: lighten($color-main-backgrounds, 30);
   font-weight: 300;
+  margin: 0;
 }
 
 .title-text-bg {
@@ -38,5 +39,34 @@ body {
   @include responsive(768px, 991px) {
     font-size: 30px;
     line-height: $text-spacing + 7;
+  }
+}
+.longer-width {
+  width: 60%;
+}
+.circled {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: solid 1px $color-main-backgrounds;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  i {
+    margin: auto;
+  }
+}
+.light-text {
+  color: white;
+}
+.dark-text {
+  color: $color-main-backgrounds;
+}
+.longer-padding {
+  padding-top: $standard-margin;
+}
+.full-input-width {
+  input {
+    width: 100%;
   }
 }

@@ -28,18 +28,6 @@
   align-items: center;
   gap: 10px;
 }
-.btn-base-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  border: solid 1px #30383b;
-  display: flex;
-  align-items: center;
-  transition: 0.3s ease-in-out;
-}
-.btn-base-icon i {
-  margin: auto;
-}
 .btn-base:hover {
   background-color: white;
   color: #1ba4ce;
@@ -53,16 +41,14 @@
 .btn-submit {
   background-color: white;
   color: #30383b;
-  display: flex;
-  margin-left: 10%;
+  float: left;
 }
 .btn-submit:hover {
   color: white;
 }
 
 .intro-texts {
-  color: #30383b;
-  width: 63%;
+  width: 40%;
   text-align: center;
   margin: auto;
 }
@@ -97,10 +83,72 @@
   }
 }
 
+.form {
+  background-color: #1ba4ce;
+}
+.form form {
+  margin-left: 100px;
+  width: 70%;
+}
+.form form .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 2%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .form form {
+    margin: auto;
+  }
+}
+.form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #1ba4ce;
+  color: white;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+.form textarea::placeholder {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .form textarea {
+    width: 100%;
+  }
+}
+.form select,
+.form input {
+  width: 48%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #1ba4ce;
+  color: white;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.form select::placeholder,
+.form input::placeholder {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .form select,
+  .form input {
+    width: 100%;
+  }
+}
+
 body {
   font-family: "Roboto", serif;
   color: #75888f;
   font-weight: 300;
+  margin: 0;
 }
 
 .title-text-bg {
@@ -149,6 +197,39 @@ body {
     font-size: 30px;
     line-height: 37px;
   }
+}
+
+.longer-width {
+  width: 60%;
+}
+
+.circled {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: solid 1px #30383b;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+.circled i {
+  margin: auto;
+}
+
+.light-text {
+  color: white;
+}
+
+.dark-text {
+  color: #30383b;
+}
+
+.longer-padding {
+  padding-top: 150px;
+}
+
+.full-input-width input {
+  width: 100%;
 }
 
 .header {
@@ -384,18 +465,6 @@ body {
   gap: 10px;
   justify-content: center;
 }
-.team-members-member-text-icons-facebook-icon, .team-members-member-text-icons-instagram-icon, .team-members-member-text-icons-twitter-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 30px;
-  border: solid 1px #30383b;
-  display: flex;
-  align-items: center;
-  transition: 0.3s ease-in-out;
-}
-.team-members-member-text-icons-facebook-icon i, .team-members-member-text-icons-instagram-icon i, .team-members-member-text-icons-twitter-icon i {
-  margin: auto;
-}
 .team-members-member-text-icons-facebook-icon:hover, .team-members-member-text-icons-instagram-icon:hover, .team-members-member-text-icons-twitter-icon:hover {
   background-color: #1ba4ce;
   color: white;
@@ -421,63 +490,6 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .appointment-img {
     display: none;
-  }
-}
-.appointment-form {
-  background-color: #1ba4ce;
-}
-.appointment-form form {
-  padding-top: 150px;
-  width: 80%;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .appointment-form form {
-    margin: auto;
-  }
-}
-.appointment-form textarea {
-  width: 85%;
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: #1ba4ce;
-  color: white;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-}
-.appointment-form textarea::placeholder {
-  color: white;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .appointment-form textarea {
-    width: 100%;
-  }
-}
-.appointment-form select,
-.appointment-form input {
-  width: 40%;
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: #1ba4ce;
-  color: white;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-}
-.appointment-form select::placeholder,
-.appointment-form input::placeholder {
-  color: white;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .appointment-form select,
-  .appointment-form input {
-    width: 100%;
   }
 }
 
@@ -532,6 +544,8 @@ body {
   margin: auto;
   gap: 20px;
   text-align: center;
+  align-items: center;
+  margin-top: 50px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-container {
@@ -555,7 +569,6 @@ body {
   text-align: center;
   justify-content: left;
   align-items: center;
-  gap: 15%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-container-phisical-address, .contact-container-phisical-email, .contact-container-phisical-phone {
@@ -564,40 +577,6 @@ body {
 }
 .contact-container-phisical-address-text, .contact-container-phisical-email-text, .contact-container-phisical-phone-text {
   text-align: left;
-}
-.contact select,
-.contact input {
-  width: 68%;
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: #1ba4ce;
-  color: white;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-}
-.contact select::placeholder,
-.contact input::placeholder {
-  color: white;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-.contact textarea {
-  width: 68%;
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: #1ba4ce;
-  color: white;
-  margin-bottom: 40px;
-  margin-left: 20px;
-  padding-bottom: 20px;
-  text-transform: uppercase;
-}
-.contact textarea::placeholder {
-  color: white;
-  text-transform: uppercase;
-  padding-bottom: 10px;
 }
 
 .footer {

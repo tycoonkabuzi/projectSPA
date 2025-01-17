@@ -48,11 +48,6 @@
           &-facebook,
           &-instagram,
           &-twitter {
-            @include circled-icon;
-          }
-          &-facebook,
-          &-instagram,
-          &-twitter {
             &-icon {
               &:hover {
                 background-color: $color-primary;
