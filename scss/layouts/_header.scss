@@ -12,6 +12,9 @@
     width: 15%;
     height: 15%;
     margin-top: 5%;
+    @include responsive(768px, 991px) {
+      margin-top: 22%;
+    }
   }
   &-texts {
     color: $color-main-backgrounds;
@@ -19,7 +22,7 @@
     padding-top: 15%;
     @include responsive(768px, 991px) {
       position: absolute;
-      width: 70%;
+      width: 80%;
       padding-left: 5%;
       padding-right: 5%;
     }

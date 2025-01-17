@@ -15,10 +15,16 @@ body {
 .title-text-bg {
   @include Bellota;
   font-size: 50px;
+  @include responsive(768px, 991px) {
+    font-size: 70px;
+  }
 }
 .title-text-md {
   @include Bellota;
   font-size: 42px;
+  @include responsive(768px, 991px) {
+    font-size: 48px;
+  }
 }
 .title-text-sm {
   @include Bellota;
@@ -38,4 +44,8 @@ body {
   font-size: 16px;
   line-height: $text-spacing;
   color: lighten($color-main-backgrounds, 25);
+  @include responsive(768px, 991px) {
+    font-size: 30px;
+    line-height: $text-spacing + 7;
+  }
 }
