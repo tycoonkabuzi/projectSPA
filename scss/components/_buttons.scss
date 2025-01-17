@@ -1,11 +1,9 @@
 %btn {
   font-size: 13px;
   border: none;
-  padding-left: $padding-buttons;
-  padding-right: $padding-buttons;
-  padding-bottom: $padding-buttons - 20;
-  padding-top: $padding-buttons - 20;
   color: white;
+  padding: $standard-padding - 35;
+
   &:hover {
     background-color: $color-main-backgrounds;
   }
