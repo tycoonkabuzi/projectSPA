@@ -1,6 +1,4 @@
 .team {
-  @include intro-text(40%);
-
   &-members {
     @include box-flex;
     @include responsive(768px, 991px) {

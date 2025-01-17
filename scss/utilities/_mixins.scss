@@ -1,26 +1,7 @@
-@mixin Roboto {
-  font-family: "Roboto", serif;
-  color: lighten($color-main-backgrounds, 30);
-  font-weight: 300;
-}
-
 @mixin Bellota {
   font-family: "Bellota", serif;
 }
-@mixin intro-text($width-value) {
-  color: $color-main-backgrounds;
-  &-texts {
-    width: $width-value;
-    margin: auto;
-    text-align: center;
-    p {
-      margin-bottom: $standard-padding;
-    }
-    @include responsive(768px, 991px) {
-      width: 90%;
-    }
-  }
-}
+
 @mixin box-flex {
   display: flex;
   justify-content: center;
@@ -29,16 +10,6 @@
   text-align: center;
 }
 @mixin nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 50px;
-  width: 53%;
-  a {
-    text-decoration: none;
-    color: $color-main-backgrounds;
-    font-size: 12px;
-    font-weight: 500;
-  }
 }
 @mixin circled-icon {
   &-icon {

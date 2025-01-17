@@ -1,6 +1,4 @@
 .popular {
-  @include intro-text(40%);
-
   &-procedures {
     @include box-flex;
     @include responsive(768px, 991px) {

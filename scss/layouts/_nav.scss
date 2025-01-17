@@ -19,12 +19,7 @@
       width: 70px;
     }
   }
-  &-menu {
-    @include nav-menu;
-    @include responsive(768px, 991px) {
-      display: none;
-    }
-  }
+
   &-humberger {
     width: 70px;
     &-item {

@@ -1,0 +1,16 @@
+.intro-texts {
+  color: $color-main-backgrounds;
+  width: 63%;
+  text-align: center;
+  margin: auto;
+  &-texts {
+    margin: auto;
+    text-align: center;
+    p {
+      margin-bottom: $standard-padding;
+    }
+    @include responsive(768px, 991px) {
+      width: 90%;
+    }
+  }
+}

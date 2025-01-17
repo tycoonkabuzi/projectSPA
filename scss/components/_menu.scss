@@ -1,0 +1,29 @@
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  width: 53%;
+  a {
+    text-decoration: none;
+    color: $color-main-backgrounds;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  @include responsive(768px, 991px) {
+    display: none;
+  }
+}
+
+// &-menu {
+//   padding-bottom: $standard-padding;
+//   @include nav-menu;
+//   width: auto;
+//   margin: auto;
+
+//   justify-content: center;
+
+//   a {
+//     font-size: $secondary-font-size;
+//   }
+// }

@@ -1,6 +1,7 @@
 body {
-  @include Roboto;
-  margin: 0;
+  font-family: "Roboto", serif;
+  color: lighten($color-main-backgrounds, 30);
+  font-weight: 300;
 }
 
 .title-text-bg {
@@ -27,7 +28,6 @@ body {
   color: lighten($color-main-backgrounds, 25);
 }
 .title-text-xs-uppercase {
-  @include Roboto;
   text-transform: uppercase;
   font-size: 13px;
 }

@@ -1,5 +1,4 @@
 .blog {
-  @include intro-text(40%);
   &-article {
     @include box-flex;
     @include responsive(768px, 991px) {
