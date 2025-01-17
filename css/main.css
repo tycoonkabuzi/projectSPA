@@ -60,6 +60,64 @@
   color: white;
 }
 
+body {
+  font-family: "Roboto", serif;
+  color: #75888f;
+  font-weight: 300;
+  margin: 0;
+}
+
+.title-text-bg {
+  font-family: "Bellota", serif;
+  font-size: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title-text-bg {
+    font-size: 70px;
+  }
+}
+
+.title-text-md {
+  font-family: "Bellota", serif;
+  font-size: 42px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .title-text-md {
+    font-size: 48px;
+  }
+}
+
+.title-text-sm {
+  font-family: "Bellota", serif;
+}
+
+.title-text-sm-uppercase {
+  font-family: "Bellota", serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #697b81;
+}
+
+.title-text-xs-uppercase {
+  font-family: "Roboto", serif;
+  color: #75888f;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.text-paragraph {
+  font-size: 16px;
+  line-height: 30px;
+  color: #697b81;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .text-paragraph {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .header {
   overflow: hidden;
   display: flex;
@@ -646,62 +704,4 @@
 }
 .footer-nav-menu a {
   font-size: 15px;
-}
-
-body {
-  font-family: "Roboto", serif;
-  color: #75888f;
-  font-weight: 300;
-  margin: 0;
-}
-
-.title-text-bg {
-  font-family: "Bellota", serif;
-  font-size: 50px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .title-text-bg {
-    font-size: 70px;
-  }
-}
-
-.title-text-md {
-  font-family: "Bellota", serif;
-  font-size: 42px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .title-text-md {
-    font-size: 48px;
-  }
-}
-
-.title-text-sm {
-  font-family: "Bellota", serif;
-}
-
-.title-text-sm-uppercase {
-  font-family: "Bellota", serif;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #697b81;
-}
-
-.title-text-xs-uppercase {
-  font-family: "Roboto", serif;
-  color: #75888f;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-.text-paragraph {
-  font-size: 16px;
-  line-height: 30px;
-  color: #697b81;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .text-paragraph {
-    font-size: 30px;
-    line-height: 37px;
-  }
 }/*# sourceMappingURL=main.css.map */

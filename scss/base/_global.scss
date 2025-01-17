@@ -1,12 +1,3 @@
-@import "../layouts/header";
-@import "../layouts/nav";
-@import "../layouts/about";
-@import "../layouts/popular";
-@import "../layouts/team";
-@import "../layouts/appointment";
-@import "../layouts/blog";
-@import "../layouts/contact";
-@import "../layouts/footer";
 body {
   @include Roboto;
   margin: 0;
