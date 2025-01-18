@@ -8,8 +8,8 @@ body {
 .title-text-bg {
   @include Bellota;
   font-size: $main-header-font-size;
-  @include responsive(768px, 991px) {
-    font-size: 70px;
+  @include responsive(0, 600px) {
+    font-size: $main-header-font-size - 15;
   }
 }
 .title-text-md {
@@ -37,9 +37,10 @@ body {
   font-size: $primary-font-size;
   line-height: $text-spacing;
   color: lighten($color-main-backgrounds, 25);
-  @include responsive(768px, 991px) {
-    font-size: 30px;
+  @include responsive(0, 600px) {
+    font-size: $primary-font-size + 1;
     line-height: $text-spacing + 7;
+    line-height: $text-spacing - 10;
   }
 }
 .longer-width {
@@ -69,5 +70,13 @@ body {
 .full-input-width {
   input {
     width: 100%;
+  }
+}
+
+.hide {
+  @include responsive(0, 600px) {
+    i {
+      display: none;
+    }
   }
 }

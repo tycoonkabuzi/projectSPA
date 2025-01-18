@@ -10,7 +10,7 @@
     font-weight: 500;
   }
 
-  @include responsive(768px, 991px) {
+  @include responsive(0, 600px) {
     display: none;
   }
 }

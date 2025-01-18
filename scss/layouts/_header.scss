@@ -3,28 +3,31 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  @include responsive(768px, 991px) {
-    position: relative;
-    height: 700px;
+  @include responsive(0, 600px) {
+    padding: 0;
+    height: 500px;
   }
   &-hidden {
     margin-left: -30px;
     width: 15%;
     height: 15%;
     margin-top: 5%;
-    @include responsive(768px, 991px) {
-      margin-top: 22%;
+    @include responsive(0, 600px) {
+      margin-left: -13px;
+      margin-top: 40%;
     }
   }
   &-texts {
     color: $color-main-backgrounds;
     width: 33%;
     padding-top: 15%;
-    @include responsive(768px, 991px) {
-      position: absolute;
-      width: 80%;
-      padding-left: 5%;
-      padding-right: 5%;
+
+    @include responsive(0, 600px) {
+      top: 100px;
+      padding-top: 0;
+      position: relative;
+      z-index: 1;
+      width: 100%;
     }
     &-buttons {
       display: flex;
@@ -39,7 +42,7 @@
     img {
       width: 100%;
     }
-    @include responsive(768px, 991px) {
+    @include responsive(0, 600px) {
       display: none;
     }
   }

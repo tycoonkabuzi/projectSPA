@@ -7,10 +7,12 @@
   }
 
   &-images {
-    display: flex;
+    @include box-flex;
+
     margin-top: $standard-margin;
+    gap: 0;
     width: 100%;
-    @include responsive(768px, 991px) {
+    @include responsive(600px, 767px) {
       flex-direction: column;
     }
 

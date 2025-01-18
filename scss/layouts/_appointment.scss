@@ -2,12 +2,12 @@
   padding-top: $standard-margin;
   @include box-flex;
   gap: 0;
-  @include responsive(768px, 991px) {
+  @include responsive(0, 600px) {
     flex-direction: column;
   }
   &-img {
     width: 40%;
-    @include responsive(768px, 991px) {
+    @include responsive(0, 600px) {
       display: none;
     }
   }

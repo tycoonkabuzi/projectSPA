@@ -2,7 +2,7 @@
   @include box-flex;
   padding-top: $standard-padding;
   flex-wrap: wrap;
-  width: 90%;
+
   margin-bottom: $standard-margin;
   @include responsive(768px, 991px) {
     flex-direction: column;
