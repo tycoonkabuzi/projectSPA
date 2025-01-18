@@ -1,60 +1,39 @@
-.team {
-  margin-bottom: $standard-margin;
-  &-members {
-    @include box-flex;
+.member {
+  position: relative;
+
+  &-text {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -40px;
+    width: 80%;
+    height: 45px;
+    overflow: hidden;
+    left: 10%;
+    right: 10%;
+    padding-bottom: $standard-padding;
+    transition: all 0.3s ease-in-out;
     @include responsive(768px, 991px) {
-      flex-direction: column;
       width: 100%;
+      left: 0;
+      right: 0;
     }
-    &-member {
-      position: relative;
-      &-img {
-        width: 90%;
-        margin: auto;
-      }
-      img {
-        width: 100%;
-      }
-      img {
-        width: 100%;
-      }
-      @include responsive(768px, 991px) {
-      }
-      &-text {
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        bottom: -40px;
-        width: 80%;
-        height: 55px;
-        overflow: hidden;
-        left: 10%;
-        right: 10%;
-        padding-bottom: $standard-padding;
-        transition: all 0.3s ease-in-out;
-        @include responsive(768px, 991px) {
-          width: 100%;
-          left: 0;
-          right: 0;
-        }
-        &:hover {
-          bottom: -20px;
-          overflow: block;
-          height: 130px;
-          @include box-shadow;
-        }
-        &-icons {
-          display: flex;
-          gap: 10px;
-          justify-content: center;
-          &-facebook,
-          &-instagram,
-          &-twitter {
-            &-icon {
-              &:hover {
-                background-color: $color-primary;
-                color: white;
-              }
-            }
+    &:hover {
+      bottom: -20px;
+      overflow: block;
+      height: 130px;
+      @include box-shadow;
+    }
+    &-icons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      &-facebook,
+      &-instagram,
+      &-twitter {
+        &-icon {
+          &:hover {
+            background-color: $color-primary;
+            color: white;
           }
         }
       }

@@ -7,33 +7,34 @@ body {
 
 .title-text-bg {
   @include Bellota;
-  font-size: 50px;
+  font-size: $main-header-font-size;
   @include responsive(768px, 991px) {
     font-size: 70px;
   }
 }
 .title-text-md {
   @include Bellota;
-  font-size: 42px;
+  font-size: $section-headers-size;
   @include responsive(768px, 991px) {
     font-size: 48px;
   }
 }
 .title-text-sm {
   @include Bellota;
+  font-size: $box-titles-font-size;
 }
 .title-text-sm-uppercase {
   @include Bellota;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: $secondary-font-size;
   color: lighten($color-main-backgrounds, 25);
 }
 .title-text-xs-uppercase {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: $secondary-font-size;
 }
 .text-paragraph {
-  font-size: 16px;
+  font-size: $primary-font-size;
   line-height: $text-spacing;
   color: lighten($color-main-backgrounds, 25);
   @include responsive(768px, 991px) {

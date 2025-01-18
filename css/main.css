@@ -144,6 +144,62 @@
   }
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 20px;
+  text-align: center;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-bottom: 150px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .row {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.col {
+  width: 20%;
+  border: 1px solid #e6e9ea;
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .col {
+    padding: 0;
+    padding-top: 5%;
+  }
+}
+.col-img {
+  width: 95%;
+  margin: auto;
+}
+.col-img img {
+  width: 100%;
+}
+.col:hover {
+  box-shadow: 1px 1px 20px #e6e9ea;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .col {
+    width: 100%;
+  }
+}
+
+.full-image-width {
+  padding: 0;
+}
+.full-image-width img {
+  width: 100%;
+}
+
 body {
   font-family: "Roboto", serif;
   color: #75888f;
@@ -173,6 +229,7 @@ body {
 
 .title-text-sm {
   font-family: "Bellota", serif;
+  font-size: 22px;
 }
 
 .title-text-sm-uppercase {
@@ -184,7 +241,7 @@ body {
 
 .title-text-xs-uppercase {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .text-paragraph {
@@ -372,82 +429,15 @@ body {
   font-weight: 400;
 }
 
-.popular-procedures {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  gap: 20px;
-  text-align: center;
-  margin-bottom: 150px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .popular-procedures {
-    flex-direction: column;
-    width: 90%;
-  }
-}
-.popular-procedures-item {
-  width: 20%;
-  border: 1px solid #e6e9ea;
-  padding: 25px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .popular-procedures-item {
-    padding: 0;
-    padding-top: 5%;
-  }
-}
-.popular-procedures-item-img {
-  width: 90%;
-  margin: auto;
-}
-.popular-procedures-item-img img {
-  width: 100%;
-}
-.popular-procedures-item:hover {
-  box-shadow: 1px 1px 20px #e6e9ea;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .popular-procedures-item {
-    width: 100%;
-  }
-}
-
-.team {
-  margin-bottom: 150px;
-}
-.team-members {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  gap: 20px;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .team-members {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.team-members-member {
+.member {
   position: relative;
 }
-.team-members-member-img {
-  width: 90%;
-  margin: auto;
-}
-.team-members-member img {
-  width: 100%;
-}
-.team-members-member img {
-  width: 100%;
-}
-.team-members-member-text {
+.member-text {
   background-color: rgb(255, 255, 255);
   position: absolute;
   bottom: -40px;
   width: 80%;
-  height: 55px;
+  height: 45px;
   overflow: hidden;
   left: 10%;
   right: 10%;
@@ -455,24 +445,24 @@ body {
   transition: all 0.3s ease-in-out;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .team-members-member-text {
+  .member-text {
     width: 100%;
     left: 0;
     right: 0;
   }
 }
-.team-members-member-text:hover {
+.member-text:hover {
   bottom: -20px;
   overflow: block;
   height: 130px;
   box-shadow: 1px 1px 20px #e6e9ea;
 }
-.team-members-member-text-icons {
+.member-text-icons {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-.team-members-member-text-icons-facebook-icon:hover, .team-members-member-text-icons-instagram-icon:hover, .team-members-member-text-icons-twitter-icon:hover {
+.member-text-icons-facebook-icon:hover, .member-text-icons-instagram-icon:hover, .member-text-icons-twitter-icon:hover {
   background-color: #1ba4ce;
   color: white;
 }
@@ -498,45 +488,6 @@ body {
   .appointment-img {
     display: none;
   }
-}
-
-.blog {
-  margin-bottom: 150px;
-}
-.blog-article {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  gap: 20px;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .blog-article {
-    flex-direction: column;
-  }
-}
-.blog-article-item {
-  width: 21%;
-  border: 1px solid #e6e9ea;
-  padding: 25px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .blog-article-item {
-    width: 90%;
-    padding: 0;
-    margin: auto;
-  }
-}
-.blog-article-item-img {
-  width: 90%;
-  margin: auto;
-  padding-top: 5%;
-}
-.blog-article-item-img img {
-  width: 100%;
-}
-.blog-article-item:hover {
-  box-shadow: 1px 1px 20px #e6e9ea;
 }
 
 .contact {
