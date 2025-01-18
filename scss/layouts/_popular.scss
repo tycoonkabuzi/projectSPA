@@ -1,6 +1,7 @@
 .popular {
   &-procedures {
     @include box-flex;
+    margin-bottom: $standard-margin;
     @include responsive(768px, 991px) {
       flex-direction: column;
       width: 90%;

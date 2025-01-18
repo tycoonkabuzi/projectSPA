@@ -328,6 +328,9 @@ body {
   }
 }
 
+.about {
+  margin-bottom: 150px;
+}
 .about img {
   width: 10%;
   display: block;
@@ -375,6 +378,7 @@ body {
   margin: auto;
   gap: 20px;
   text-align: center;
+  margin-bottom: 150px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .popular-procedures {
@@ -409,6 +413,9 @@ body {
   }
 }
 
+.team {
+  margin-bottom: 150px;
+}
 .team-members {
   display: flex;
   justify-content: center;
@@ -493,6 +500,9 @@ body {
   }
 }
 
+.blog {
+  margin-bottom: 150px;
+}
 .blog-article {
   display: flex;
   justify-content: center;

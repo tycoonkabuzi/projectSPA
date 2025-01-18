@@ -1,4 +1,5 @@
 .blog {
+  margin-bottom: $standard-margin;
   &-article {
     @include box-flex;
     @include responsive(768px, 991px) {
