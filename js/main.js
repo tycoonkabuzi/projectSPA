@@ -1,5 +1,5 @@
 //variables
-
+const theBody = document.querySelector("body");
 const navBar = document.querySelector(".nav");
 const humbergerMenu = document.querySelector(".nav-humberger");
 
@@ -21,8 +21,9 @@ function displayMobileMenu() {
   humbergerMenu.firstElementChild.classList.toggle("rotate-left");
   humbergerMenu.lastElementChild.classList.toggle("rotate-right");
   humbergerMenu.lastElementChild.previousElementSibling.classList.toggle(
-    "hide"
+    "hide-span"
   );
+  theBody.classList.toggle("top-background");
 }
 
 window.addEventListener("scroll", changeOnScroll);

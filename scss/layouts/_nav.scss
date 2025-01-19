@@ -46,7 +46,14 @@
 .fixed-nav {
   background-color: $color-primary;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  a {
+    color: white;
+  }
 }
 // humberger menu onScrool
 .white-humberger {
@@ -59,9 +66,10 @@
 .mobile-nav {
   width: 80%;
   background-color: $color-primary;
-  z-index: 1;
+  z-index: 4;
   margin-left: 20%;
   display: flex;
+  @include box-shadow;
   .menu {
     margin-top: 60px;
     height: auto;
@@ -91,7 +99,7 @@
   }
 }
 // hide span
-.hide {
+.hide-span {
   display: none;
 }
 // rotate span
