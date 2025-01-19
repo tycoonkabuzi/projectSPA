@@ -14,5 +14,16 @@ function changeOnScroll() {
     humbergerMenu.classList.remove("white-humberger");
   }
 }
+// function to display the mobile display menu
+function displayMobileMenu() {
+  navBar.classList.toggle("mobile-nav");
+  humbergerMenu.classList.toggle("humberger-on-click");
+  humbergerMenu.firstElementChild.classList.toggle("rotate-left");
+  humbergerMenu.lastElementChild.classList.toggle("rotate-right");
+  humbergerMenu.lastElementChild.previousElementSibling.classList.toggle(
+    "hide"
+  );
+}
 
 window.addEventListener("scroll", changeOnScroll);
+humbergerMenu.addEventListener("click", displayMobileMenu);

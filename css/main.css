@@ -421,6 +421,7 @@ body {
   width: 70px;
 }
 .nav-humberger-item {
+  transition: all 0.36s ease-in-out;
   display: hide;
   width: 70px;
   height: 10px;
@@ -444,6 +445,51 @@ body {
 
 .white-humberger span {
   background-color: white;
+}
+
+.mobile-nav {
+  width: 80%;
+  background-color: #1ba4ce;
+  z-index: 1;
+  margin-left: 20%;
+  display: flex;
+}
+.mobile-nav .menu {
+  margin-top: 60px;
+  height: auto;
+  display: block;
+  line-height: 80px;
+}
+.mobile-nav .menu a {
+  font-size: 40px;
+  color: white;
+}
+.mobile-nav .nav-logo img {
+  display: none;
+}
+
+.humberger-on-click {
+  position: absolute;
+  top: 4%;
+  right: 20px;
+  padding-bottom: 20px;
+}
+.humberger-on-click span {
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.rotate-left {
+  transform: rotate(40deg);
+  margin-top: 12px;
+}
+
+.rotate-right {
+  transform: rotate(-40deg);
+  margin-top: -12px;
 }
 
 .about {
