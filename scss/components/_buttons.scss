@@ -18,6 +18,13 @@
     font-size: 10px;
     text-transform: uppercase;
   }
+  @include responsive(600px, 767px) {
+    padding-top: $standard-padding - 30;
+    padding-bottom: $standard-padding - 30;
+    padding-left: $standard-padding - 10;
+    padding-right: $standard-padding - 10;
+    font-size: $primary-font-size;
+  }
 }
 %border-radius {
   text-transform: uppercase;

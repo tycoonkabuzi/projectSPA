@@ -14,10 +14,18 @@
       flex-direction: column;
       width: 100%;
     }
+    @include responsive(600px, 767px) {
+      flex-direction: column;
+      width: 100%;
+    }
     &-phisical {
       width: 17%;
       @include responsive(0, 600px) {
         width: 80%;
+        margin: auto;
+      }
+      @include responsive(600px, 767px) {
+        width: 60%;
         margin: auto;
       }
       &-address,
@@ -27,9 +35,6 @@
         justify-content: left;
         align-items: center;
 
-        @include responsive(768px, 991px) {
-          gap: 0;
-        }
         &-text {
           text-align: left;
         }

@@ -15,6 +15,10 @@
       margin: auto;
       flex-direction: column;
     }
+    @include responsive(600px, 767px) {
+      margin: auto;
+      flex-direction: column;
+    }
   }
 
   textarea {
@@ -29,9 +33,9 @@
       color: white;
       text-transform: uppercase;
       padding-bottom: 10px;
-    }
-    @include responsive(768px, 991px) {
-      width: 100%;
+      @include responsive(600px, 767px) {
+        padding-bottom: 0px;
+      }
     }
   }
   select,
@@ -41,17 +45,20 @@
     border-bottom: 1px solid white;
     background-color: $color-primary;
     color: white;
-    margin-bottom: 40px;
-
+    margin-bottom: 10%;
     padding-bottom: 20px;
     text-transform: uppercase;
+    @include responsive(0, 600px) {
+      width: 100%;
+    }
+    @include responsive(600px, 767px) {
+      width: 100%;
+      font-size: $primary-font-size + 2;
+    }
     &::placeholder {
       color: white;
       text-transform: uppercase;
       padding-bottom: 10px;
-    }
-    @include responsive(0, 600px) {
-      width: 100%;
     }
   }
 }

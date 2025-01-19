@@ -5,10 +5,19 @@
   @include responsive(0, 600px) {
     flex-direction: column;
   }
+  @include responsive(600px, 767px) {
+    flex-direction: column;
+  }
   &-img {
     width: 40%;
     @include responsive(0, 600px) {
       display: none;
+    }
+    @include responsive(600px, 767px) {
+      display: none;
+    }
+    @include responsive(600px, 767px) {
+      flex-direction: none;
     }
   }
 }

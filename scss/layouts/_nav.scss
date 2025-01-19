@@ -15,6 +15,19 @@
     top: 0;
     align-items: center;
   }
+
+  @include responsive(600px, 767px) {
+    justify-content: space-between;
+    padding-right: 5%;
+    padding-left: 5%;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  @include responsive(768px, 1199px) {
+    left: 4%;
+  }
+
   &-logo {
     img {
       width: 70px;
@@ -37,6 +50,10 @@
         height: 5px;
         margin-bottom: 7px;
       }
+
+      @include responsive(600px, 767px) {
+        display: block;
+      }
     }
   }
 }
@@ -54,6 +71,9 @@
   a {
     color: white;
   }
+  @include responsive(600px, 767px) {
+    width: 90%;
+  }
 }
 // humberger menu onScrool
 .white-humberger {
@@ -70,16 +90,27 @@
   margin-left: 20%;
   display: flex;
   @include box-shadow;
+  @include responsive(600px, 767px) {
+    width: 90%;
+    margin-left: 5%;
+    overflow: hidden;
+  }
   .menu {
+    width: 50%;
     margin-top: 60px;
     height: auto;
     display: block;
 
     line-height: 80px;
-
+    @include responsive(600px, 767px) {
+      width: 40%;
+    }
     a {
       font-size: $main-header-font-size - 10;
       color: white;
+      @include responsive(0, 600px) {
+        font-size: $main-header-font-size - 20;
+      }
     }
   }
   .nav-logo {
@@ -91,8 +122,12 @@
 .humberger-on-click {
   position: absolute;
   top: 4%;
-  right: 20px;
+  right: 7%;
   padding-bottom: 20px;
+  @include responsive(600px, 767px) {
+    top: 1.5%;
+    right: 10%;
+  }
 
   span {
     background-color: white;
@@ -107,8 +142,16 @@
 .rotate-left {
   transform: rotate(40deg);
   margin-top: 12px;
+  @include responsive(600px, 767px) {
+    transform: rotate(44deg);
+    margin-top: 20px;
+  }
 }
 .rotate-right {
   transform: rotate(-40deg);
   margin-top: -12px;
+  @include responsive(600px, 767px) {
+    transform: rotate(-44deg);
+    margin-top: -20px;
+  }
 }

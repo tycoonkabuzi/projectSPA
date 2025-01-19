@@ -2,11 +2,16 @@
   overflow: hidden;
   display: flex;
   position: relative;
+  margin-right: 20px;
   justify-content: space-between;
   @include responsive(0, 600px) {
     padding: 0;
     height: 500px;
   }
+  @include responsive(600px, 767px) {
+    padding: 0;
+  }
+
   &-hidden {
     margin-left: -30px;
     width: 15%;
@@ -16,6 +21,14 @@
       margin-left: -13px;
       margin-top: 40%;
     }
+    @include responsive(600px, 767px) {
+      margin-top: 50%;
+      margin-left: -10px;
+    }
+    @include responsive(768px, 1199px) {
+      margin-top: 30%;
+      margin-left: -10px;
+    }
   }
   &-texts {
     color: $color-main-backgrounds;
@@ -23,12 +36,21 @@
     padding-top: 15%;
 
     @include responsive(0, 600px) {
-      top: 100px;
+      margin-top: 100px;
       padding-top: 0;
       position: relative;
       z-index: 1;
       width: 100%;
     }
+
+    @include responsive(600px, 767px) {
+      margin-top: 100px;
+      width: 100%;
+    }
+    @include responsive(768px, 1199px) {
+      width: 50%;
+    }
+
     &-buttons {
       display: flex;
       gap: 20px;
@@ -43,6 +65,9 @@
       width: 100%;
     }
     @include responsive(0, 600px) {
+      display: none;
+    }
+    @include responsive(600px, 767px) {
       display: none;
     }
   }

@@ -7,6 +7,10 @@
     flex-direction: column;
     width: 90%;
   }
+  @include responsive(600px, 767px) {
+    flex-direction: column;
+    width: 90%;
+  }
 }
 .col {
   width: 20%;
@@ -26,6 +30,18 @@
     padding-bottom: $standard-padding;
     margin-bottom: 10%;
   }
+  @include responsive(600px, 767px) {
+    padding: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    padding-bottom: $standard-padding;
+    margin-bottom: 10%;
+  }
+  @include responsive(768px, 1199px) {
+    width: 30%;
+  }
   &-img {
     width: 95%;
     margin: auto;
@@ -36,9 +52,6 @@
   }
   &:hover {
     @include box-shadow;
-  }
-  @include responsive(768px, 991px) {
-    width: 100%;
   }
 }
 .full-image-width {

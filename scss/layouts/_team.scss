@@ -16,6 +16,10 @@
       height: 40px;
       z-index: 1;
     }
+    @include responsive(600px, 767px) {
+      height: 45px;
+      z-index: 1;
+    }
     &:hover {
       bottom: -20px;
       overflow: block;

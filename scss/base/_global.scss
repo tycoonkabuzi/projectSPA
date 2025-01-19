@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(147, 147, 147, 0.41);
+    background-color: rgb(233, 7, 7);
     z-index: 2;
   }
 }
@@ -24,12 +24,18 @@ body {
   @include responsive(0, 600px) {
     font-size: $main-header-font-size - 15;
   }
+  @include responsive(600, 767px) {
+    font-size: $main-header-font-size - 5;
+  }
 }
 .title-text-md {
   @include Bellota;
   font-size: $section-headers-size;
   @include responsive(0, 600px) {
     font-size: $box-titles-font-size;
+  }
+  @include responsive(600, 767px) {
+    font-size: $section-headers-size -10px;
   }
 }
 .title-text-sm {
@@ -53,7 +59,10 @@ body {
   @include responsive(0, 600px) {
     font-size: $primary-font-size + 1;
     line-height: $text-spacing + 7;
-    line-height: $text-spacing - 10;
+  }
+  @include responsive(600px, 767px) {
+    font-size: $primary-font-size + 5;
+    line-height: $text-spacing + 8;
   }
 }
 

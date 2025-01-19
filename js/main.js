@@ -23,8 +23,13 @@ function displayMobileMenu() {
   humbergerMenu.lastElementChild.previousElementSibling.classList.toggle(
     "hide-span"
   );
-  theBody.classList.toggle("top-background");
+  //theBody.classList.toggle("top-background");
 }
 
 window.addEventListener("scroll", changeOnScroll);
 humbergerMenu.addEventListener("click", displayMobileMenu);
+// document.addEventListener("click", (event) => {
+//   if (!navBar.contains(event.target)) {
+//     displayMobileMenu();
+//   }
+// });

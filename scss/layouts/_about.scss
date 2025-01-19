@@ -9,6 +9,9 @@
     @include responsive(0, 600px) {
       width: 30%;
     }
+    @include responsive(600px, 767px) {
+      width: 40%;
+    }
   }
 
   &-images {
@@ -18,6 +21,9 @@
     width: 100%;
 
     @include responsive(0, 600px) {
+      flex-direction: column;
+    }
+    @include responsive(600px, 767px) {
       flex-direction: column;
     }
     &-item {
