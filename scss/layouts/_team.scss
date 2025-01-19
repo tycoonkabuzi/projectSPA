@@ -12,10 +12,9 @@
     right: 10%;
     padding-bottom: $standard-padding;
     transition: all 0.3s ease-in-out;
-    @include responsive(768px, 991px) {
-      width: 100%;
-      left: 0;
-      right: 0;
+    @include responsive(0, 600px) {
+      height: 40px;
+      z-index: 1;
     }
     &:hover {
       bottom: -20px;

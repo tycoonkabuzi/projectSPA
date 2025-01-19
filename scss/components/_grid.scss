@@ -2,9 +2,8 @@
   @include box-flex;
   padding-top: $standard-padding;
   flex-wrap: wrap;
-
-  margin-bottom: $standard-margin;
-  @include responsive(768px, 991px) {
+  width: 90%;
+  @include responsive(0, 600px) {
     flex-direction: column;
     width: 90%;
   }
@@ -17,9 +16,15 @@
   padding-bottom: $standard-padding;
   padding-left: $standard-padding - 35;
   padding-right: $standard-padding - 35;
-  @include responsive(768px, 991px) {
+
+  @include responsive(0, 600px) {
     padding: 0;
     padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    padding-bottom: $standard-padding;
+    margin-bottom: 10%;
   }
   &-img {
     width: 95%;

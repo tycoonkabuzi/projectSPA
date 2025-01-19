@@ -10,12 +10,13 @@
     @include box-flex;
     align-items: center;
     margin-top: $standard-padding;
-    @include responsive(768px, 991px) {
+    @include responsive(0, 600px) {
       flex-direction: column;
+      width: 100%;
     }
     &-phisical {
       width: 17%;
-      @include responsive(768px, 991px) {
+      @include responsive(0, 600px) {
         width: 80%;
         margin: auto;
       }

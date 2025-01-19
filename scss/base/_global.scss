@@ -15,8 +15,8 @@ body {
 .title-text-md {
   @include Bellota;
   font-size: $section-headers-size;
-  @include responsive(768px, 991px) {
-    font-size: 48px;
+  @include responsive(0, 600px) {
+    font-size: $box-titles-font-size;
   }
 }
 .title-text-sm {
@@ -43,8 +43,29 @@ body {
     line-height: $text-spacing - 10;
   }
 }
+
+.intro-texts {
+  @include responsive(0, 600px) {
+    width: 90%;
+  }
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  &-texts {
+    margin: auto;
+    text-align: center;
+
+    p {
+      margin-bottom: $standard-padding;
+    }
+  }
+}
+
 .longer-width {
   width: 60%;
+  @include responsive(0, 600px) {
+    width: 90%;
+  }
 }
 .circled {
   width: 30px;

@@ -13,6 +13,7 @@
     justify-content: space-between;
     left: 0;
     top: 0;
+    align-items: center;
   }
   &-logo {
     img {
@@ -35,5 +36,18 @@
         margin-bottom: 7px;
       }
     }
+  }
+}
+
+// nav on scroll
+
+.fixed-nav {
+  background-color: $color-primary;
+  position: fixed;
+  z-index: 1;
+}
+.white-humberger {
+  span {
+    background-color: white;
   }
 }

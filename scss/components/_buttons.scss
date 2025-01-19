@@ -1,5 +1,5 @@
 %btn {
-  font-size: 13px;
+  font-size: $primary-font-size - 3;
   border: none;
   color: white;
   padding-top: $standard-padding - 40;
@@ -31,6 +31,13 @@
   @extend %btn;
   @extend %border-radius;
   background-color: $color-primary;
+  @include responsive(0, 600px) {
+    font-size: $primary-font-size;
+    padding-top: $standard-padding - 35;
+    padding-bottom: $standard-padding - 35;
+    padding-left: $standard-padding - 15;
+    padding-right: $standard-padding - 15;
+  }
 }
 .btn-base {
   @extend %btn;
@@ -57,5 +64,8 @@
   float: left;
   &:hover {
     color: white;
+  }
+  @include responsive(0, 600px) {
+    float: none;
   }
 }

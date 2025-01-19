@@ -33,6 +33,15 @@
 .btn-secondary {
   background-color: #1ba4ce;
 }
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  .btn-secondary {
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
 
 .btn-base {
   color: #30383b;
@@ -59,22 +68,9 @@
 .btn-submit:hover {
   color: white;
 }
-
-.intro-texts {
-  width: 40%;
-  text-align: center;
-  margin: auto;
-}
-.intro-texts-texts {
-  margin: auto;
-  text-align: center;
-}
-.intro-texts-texts p {
-  margin-bottom: 50px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .intro-texts-texts {
-    width: 90%;
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  .btn-submit {
+    float: none;
   }
 }
 
@@ -82,7 +78,8 @@
   list-style: none;
   display: flex;
   gap: 50px;
-  width: 53%;
+  width: 70%;
+  align-items: center;
 }
 .menu a {
   text-decoration: none;
@@ -109,9 +106,10 @@
   justify-content: left;
   gap: 2%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .form form {
     margin: auto;
+    flex-direction: column;
   }
 }
 .form textarea {
@@ -150,7 +148,7 @@
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .form select,
   .form input {
     width: 100%;
@@ -165,9 +163,9 @@
   text-align: center;
   padding-top: 50px;
   flex-wrap: wrap;
-  margin-bottom: 150px;
+  width: 90%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .row {
     flex-direction: column;
     width: 90%;
@@ -183,10 +181,15 @@
   padding-left: 15px;
   padding-right: 15px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .col {
     padding: 0;
     padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 10%;
   }
 }
 .col-img {
@@ -233,9 +236,9 @@ body {
   font-family: "Bellota", serif;
   font-size: 42px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .title-text-md {
-    font-size: 48px;
+    font-size: 22px;
   }
 }
 
@@ -269,8 +272,31 @@ body {
   }
 }
 
+.intro-texts {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  .intro-texts {
+    width: 90%;
+  }
+}
+.intro-texts-texts {
+  margin: auto;
+  text-align: center;
+}
+.intro-texts-texts p {
+  margin-bottom: 50px;
+}
+
 .longer-width {
   width: 60%;
+}
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  .longer-width {
+    width: 90%;
+  }
 }
 
 .circled {
@@ -385,6 +411,7 @@ body {
     justify-content: space-between;
     left: 0;
     top: 0;
+    align-items: center;
   }
 }
 .nav-logo img {
@@ -409,13 +436,30 @@ body {
   }
 }
 
+.fixed-nav {
+  background-color: #1ba4ce;
+  position: fixed;
+  z-index: 1;
+}
+
+.white-humberger span {
+  background-color: white;
+}
+
 .about {
   margin-bottom: 150px;
+  padding: 0;
+  margin: 0;
 }
 .about img {
   width: 10%;
   display: block;
   margin: auto;
+}
+@media only screen and (min-width: 0) and (max-width: 600px) {
+  .about img {
+    width: 30%;
+  }
 }
 .about-images {
   display: flex;
@@ -427,7 +471,7 @@ body {
   gap: 0;
   width: 100%;
 }
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .about-images {
     flex-direction: column;
   }
@@ -473,11 +517,10 @@ body {
   padding-bottom: 50px;
   transition: all 0.3s ease-in-out;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .member-text {
-    width: 100%;
-    left: 0;
-    right: 0;
+    height: 40px;
+    z-index: 1;
   }
 }
 .member-text:hover {
@@ -537,15 +580,16 @@ body {
   align-items: center;
   margin-top: 50px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .contact-container {
     flex-direction: column;
+    width: 100%;
   }
 }
 .contact-container-phisical {
   width: 17%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 0) and (max-width: 600px) {
   .contact-container-phisical {
     width: 80%;
     margin: auto;

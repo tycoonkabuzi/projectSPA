@@ -1,21 +1,25 @@
 .about {
   margin-bottom: $standard-margin;
+  padding: 0;
+  margin: 0;
   img {
     width: 10%;
     display: block;
     margin: auto;
+    @include responsive(0, 600px) {
+      width: 30%;
+    }
   }
 
   &-images {
     @include box-flex;
-
     margin-top: $standard-margin;
     gap: 0;
     width: 100%;
-    @include responsive(600px, 767px) {
+
+    @include responsive(0, 600px) {
       flex-direction: column;
     }
-
     &-item {
       position: relative;
 

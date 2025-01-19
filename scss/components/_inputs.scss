@@ -11,8 +11,9 @@
 
     width: 70%;
 
-    @include responsive(768px, 991px) {
+    @include responsive(0, 600px) {
       margin: auto;
+      flex-direction: column;
     }
   }
 
@@ -49,7 +50,7 @@
       text-transform: uppercase;
       padding-bottom: 10px;
     }
-    @include responsive(768px, 991px) {
+    @include responsive(0, 600px) {
       width: 100%;
     }
   }
