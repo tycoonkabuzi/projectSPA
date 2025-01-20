@@ -36,10 +36,17 @@
 
   &-humberger {
     width: 70px;
+    display: none;
+    @include responsive(0, 600px) {
+      display: block;
+    }
+
+    @include responsive(600px, 767px) {
+      display: block;
+    }
 
     &-item {
       transition: all 0.36s ease-in-out;
-      display: hide;
       width: 70px;
       height: 10px;
       background-color: $color-primary;
@@ -124,6 +131,7 @@
   top: 4%;
   right: 7%;
   padding-bottom: 20px;
+
   @include responsive(600px, 767px) {
     top: 1.5%;
     right: 10%;

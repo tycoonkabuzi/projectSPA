@@ -23,13 +23,20 @@ function displayMobileMenu() {
   humbergerMenu.lastElementChild.previousElementSibling.classList.toggle(
     "hide-span"
   );
-  //theBody.classList.toggle("top-background");
+  theBody.classList.toggle("top-background");
+}
+// function to change the background color whenever I click on the outside of a nav.
+function bodyBackgroundChangeOnClick(event) {
+  if (
+    !navBar.contains(event.target) &&
+    window.innerWidth <= 768 &&
+    navBar.classList.contains("mobile-nav")
+  ) {
+    displayMobileMenu();
+    console.log();
+  }
 }
 
 window.addEventListener("scroll", changeOnScroll);
 humbergerMenu.addEventListener("click", displayMobileMenu);
-// document.addEventListener("click", (event) => {
-//   if (!navBar.contains(event.target)) {
-//     displayMobileMenu();
-//   }
-// });
+document.addEventListener("click", bodyBackgroundChangeOnClick);
