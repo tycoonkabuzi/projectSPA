@@ -3,6 +3,8 @@ const theBody = document.querySelector("body");
 const navBar = document.querySelector(".nav");
 const humbergerMenu = document.querySelector(".nav-humberger");
 
+const forms = document.querySelectorAll("form");
+
 // functions
 // function to change the background of the nav and the humberger menu on scroll
 function changeOnScroll() {
@@ -33,10 +35,63 @@ function bodyBackgroundChangeOnClick(event) {
     navBar.classList.contains("mobile-nav")
   ) {
     displayMobileMenu();
-    console.log();
   }
 }
+// function form handler
 
+function formHandler(e) {
+  e.preventDefault();
+  const form = e.target;
+  console.log(form);
+  const nameInput = form.querySelector("#name");
+  const emailInput = form.querySelector("#email");
+  const optionsInput = form.querySelector("#options");
+  const numberInput = form.querySelector("#number");
+  const dateInput = form.querySelector("#date");
+  const timeInput = form.querySelector("#time");
+  const notesInput = form.querySelector("#notes");
+
+  const hasNumber = /\d/;
+  switch (true) {
+    //names
+    case nameInput.value === "":
+      alert("Name field is empty you must provide a name");
+      break;
+    case hasNumber.test(nameInput.value):
+      alert("Your name should not contain numbers");
+      break;
+    //email
+    case emailInput.value === "":
+      alert("Email field is empty you must provide a email");
+      break;
+
+    case !emailInput.value.includes("@"):
+      alert("Email field should contain @");
+      break;
+
+    case optionsInput.value === "option1":
+      alert("Invalid option");
+      break;
+    case dateInput.value === "":
+      alert("A date must be provided ");
+      break;
+    case timeInput.value === "":
+      alert("A time must be provided");
+      break;
+    case numberInput.value === "":
+      alert("Please provide your phone number");
+      break;
+    case notesInput.value === "":
+      alert("This is empty");
+      break;
+    default:
+      alert("Form Submitted");
+  }
+}
+// Event listeners
 window.addEventListener("scroll", changeOnScroll);
 humbergerMenu.addEventListener("click", displayMobileMenu);
 document.addEventListener("click", bodyBackgroundChangeOnClick);
+forms.forEach((element) => {
+  element.addEventListener("submit", formHandler);
+});
