@@ -102,6 +102,7 @@
     margin-left: 5%;
     overflow: hidden;
   }
+
   .menu {
     width: 50%;
     margin-top: 60px;
@@ -112,6 +113,7 @@
     @include responsive(600px, 767px) {
       width: 40%;
     }
+
     a {
       font-size: $main-header-font-size - 10;
       color: white;
