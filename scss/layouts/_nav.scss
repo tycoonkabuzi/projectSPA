@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   left: 23%;
-  background-color: red;
+  font-size: $primary-font-size;
 
   @include responsive(0, 600px) {
     padding-right: 5%;

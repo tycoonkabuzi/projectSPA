@@ -23,7 +23,9 @@
   padding-bottom: $standard-padding;
   padding-left: $standard-padding - 35;
   padding-right: $standard-padding - 35;
-
+  a {
+    text-decoration: none;
+  }
   @include responsive(0, 600px) {
     padding: 0;
     padding-top: 5%;
