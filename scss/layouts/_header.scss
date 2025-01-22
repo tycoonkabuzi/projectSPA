@@ -37,8 +37,8 @@
 
   &-texts {
     color: $color-main-backgrounds;
-    width: 33%;
-    padding-top: 15%;
+    width: 25%;
+    padding-top: $standard-margin;
 
     @include responsive(0, 600px) {
       margin-top: 100px;

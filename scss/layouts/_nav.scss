@@ -1,11 +1,10 @@
 .nav {
   @include box-flex;
-
   text-transform: uppercase;
-  padding-top: 10px;
   position: absolute;
-  top: 4%;
-  left: 15%;
+  top: 0;
+  left: 23%;
+  background-color: red;
 
   @include responsive(0, 600px) {
     padding-right: 5%;
