@@ -1,6 +1,6 @@
 .appointment {
-  padding-top: $standard-margin;
   @include box-flex;
+  padding-top: $standard-margin;
   gap: 0;
   @include responsive(0, 600px) {
     flex-direction: column;
@@ -8,6 +8,7 @@
   @include responsive(600px, 767px) {
     flex-direction: column;
   }
+
   &-img {
     width: 40%;
     @include responsive(0, 600px) {

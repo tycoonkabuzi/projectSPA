@@ -1,7 +1,9 @@
 .form {
   background-color: $color-primary;
+
   form {
     margin-left: $standard-margin - 50;
+
     .inputs {
       display: flex;
       flex-wrap: wrap;
@@ -29,6 +31,7 @@
     color: white;
     margin-bottom: 40px;
     padding-bottom: 20px;
+
     &::placeholder {
       color: white;
       text-transform: uppercase;
@@ -38,6 +41,7 @@
       }
     }
   }
+
   select,
   input {
     width: 48%;

@@ -8,6 +8,7 @@ body {
 
 .top-background {
   position: relative;
+
   &::before {
     content: "";
     width: 100%;
@@ -21,13 +22,16 @@ body {
 .title-text-bg {
   @include Bellota;
   font-size: $main-header-font-size;
+
   @include responsive(0, 600px) {
     font-size: $main-header-font-size - 15;
   }
+
   @include responsive(600, 767px) {
     font-size: $main-header-font-size - 5;
   }
 }
+
 .title-text-md {
   @include Bellota;
   font-size: $section-headers-size;
@@ -38,20 +42,24 @@ body {
     font-size: $section-headers-size -10px;
   }
 }
+
 .title-text-sm {
   @include Bellota;
   font-size: $box-titles-font-size;
 }
+
 .title-text-sm-uppercase {
   @include Bellota;
   text-transform: uppercase;
   font-size: $secondary-font-size;
   color: lighten($color-main-backgrounds, 25);
 }
+
 .title-text-xs-uppercase {
   text-transform: uppercase;
   font-size: $secondary-font-size;
 }
+
 .text-paragraph {
   font-size: $primary-font-size;
   line-height: $text-spacing;
@@ -67,12 +75,10 @@ body {
 }
 
 .intro-texts {
-  @include responsive(0, 600px) {
-    width: 90%;
-  }
   width: 90%;
   text-align: center;
   margin: auto;
+
   &-texts {
     margin: auto;
     text-align: center;
@@ -89,6 +95,7 @@ body {
     width: 90%;
   }
 }
+
 .circled {
   width: 30px;
   height: 30px;
@@ -101,15 +108,19 @@ body {
     margin: auto;
   }
 }
+
 .light-text {
   color: white;
 }
+
 .dark-text {
   color: $color-main-backgrounds;
 }
+
 .longer-padding {
   padding-top: $standard-margin;
 }
+
 .full-input-width {
   input {
     width: 100%;

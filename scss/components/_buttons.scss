@@ -26,14 +26,17 @@
     font-size: $primary-font-size;
   }
 }
+
 %border-radius {
   text-transform: uppercase;
   border-radius: 30px;
 }
+
 .btn-primary {
   @extend %btn;
   background-color: $color-primary;
 }
+
 .btn-secondary {
   @extend %btn;
   @extend %border-radius;
@@ -46,6 +49,7 @@
     padding-right: $standard-padding - 15;
   }
 }
+
 .btn-base {
   @extend %btn;
   color: $color-main-backgrounds;
@@ -63,6 +67,7 @@
     }
   }
 }
+
 .btn-submit {
   @extend %btn;
   @extend %border-radius;

@@ -1,10 +1,12 @@
 .nav {
   @include box-flex;
+
   text-transform: uppercase;
   padding-top: 10px;
   position: absolute;
   top: 4%;
   left: 15%;
+
   @include responsive(0, 600px) {
     padding-right: 5%;
     padding-left: 5%;
@@ -24,6 +26,7 @@
     right: 0;
     top: 0;
   }
+
   @include responsive(768px, 1199px) {
     left: 4%;
   }
@@ -51,6 +54,7 @@
       height: 10px;
       background-color: $color-primary;
       margin-bottom: 10px;
+
       @include responsive(0, 600px) {
         display: block;
         width: 40px;
@@ -78,11 +82,13 @@
   a {
     color: white;
   }
+
   @include responsive(600px, 767px) {
     width: 90%;
   }
 }
 // humberger menu onScrool
+
 .white-humberger {
   span {
     background-color: white;
@@ -96,7 +102,9 @@
   z-index: 4;
   margin-left: 20%;
   display: flex;
+
   @include box-shadow;
+
   @include responsive(600px, 767px) {
     width: 90%;
     margin-left: 5%;
@@ -108,8 +116,8 @@
     margin-top: 60px;
     height: auto;
     display: block;
-
     line-height: 80px;
+
     @include responsive(600px, 767px) {
       width: 40%;
     }
@@ -122,12 +130,14 @@
       }
     }
   }
+
   .nav-logo {
     img {
       display: none;
     }
   }
 }
+
 .humberger-on-click {
   position: absolute;
   top: 4%;
@@ -157,6 +167,7 @@
     margin-top: 20px;
   }
 }
+
 .rotate-right {
   transform: rotate(-40deg);
   margin-top: -12px;

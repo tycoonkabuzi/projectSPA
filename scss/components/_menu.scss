@@ -15,6 +15,7 @@
   @include responsive(0, 600px) {
     display: none;
   }
+
   @include responsive(600px, 767px) {
     display: none;
   }
@@ -34,6 +35,3 @@
 // }
 
 // humberger on scroll
-
-.cross-close {
-}

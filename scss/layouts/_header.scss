@@ -4,9 +4,11 @@
   position: relative;
   justify-content: space-between;
   width: 100%;
+
   @include responsive(0, 600px) {
     padding: 0;
   }
+
   @include responsive(600px, 767px) {
     padding: 0;
   }
@@ -16,19 +18,23 @@
     width: 15%;
     height: 15%;
     margin-top: 5%;
+
     @include responsive(0, 600px) {
       margin-left: -13px;
       margin-top: 40%;
     }
+
     @include responsive(600px, 767px) {
       margin-top: 50%;
       margin-left: -10px;
     }
+
     @include responsive(768px, 1199px) {
       margin-top: 30%;
       margin-left: -10px;
     }
   }
+
   &-texts {
     color: $color-main-backgrounds;
     width: 33%;
@@ -57,15 +63,18 @@
       padding-top: $standard-padding;
     }
   }
+
   &-image {
     width: 40%;
 
     img {
       width: 100%;
     }
+
     @include responsive(0, 600px) {
       display: none;
     }
+
     @include responsive(600px, 767px) {
       display: none;
     }

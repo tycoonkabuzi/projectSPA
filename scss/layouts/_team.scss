@@ -12,20 +12,24 @@
     right: 10%;
     padding-bottom: $standard-padding;
     transition: all 0.3s ease-in-out;
+
     @include responsive(0, 600px) {
       height: 40px;
       z-index: 1;
     }
+
     @include responsive(600px, 767px) {
       height: 45px;
       z-index: 1;
     }
+
     &:hover {
       bottom: -20px;
       overflow: block;
       height: 130px;
       @include box-shadow;
     }
+
     &-icons {
       display: flex;
       gap: 10px;
