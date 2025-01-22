@@ -1,46 +1,49 @@
-.member {
-  position: relative;
+.team {
+  margin-bottom: $standard-margin;
+  .member {
+    position: relative;
 
-  &-text {
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    bottom: -40px;
-    width: 80%;
-    height: 45px;
-    overflow: hidden;
-    left: 10%;
-    right: 10%;
-    padding-bottom: $standard-padding;
-    transition: all 0.3s ease-in-out;
-
-    @include responsive(0, 600px) {
-      height: 40px;
-      z-index: 1;
-    }
-
-    @include responsive(600px, 767px) {
+    &-text {
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      bottom: -40px;
+      width: 80%;
       height: 45px;
-      z-index: 1;
-    }
+      overflow: hidden;
+      left: 10%;
+      right: 10%;
+      padding-bottom: $standard-padding;
+      transition: all 0.3s ease-in-out;
 
-    &:hover {
-      bottom: -20px;
-      overflow: block;
-      height: 130px;
-      @include box-shadow;
-    }
+      @include responsive(0, 600px) {
+        height: 40px;
+        z-index: 1;
+      }
 
-    &-icons {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      &-facebook,
-      &-instagram,
-      &-twitter {
-        &-icon {
-          &:hover {
-            background-color: $color-primary;
-            color: white;
+      @include responsive(600px, 767px) {
+        height: 45px;
+        z-index: 1;
+      }
+
+      &:hover {
+        bottom: -20px;
+        overflow: block;
+        height: 130px;
+        @include box-shadow;
+      }
+
+      &-icons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        &-facebook,
+        &-instagram,
+        &-twitter {
+          &-icon {
+            &:hover {
+              background-color: $color-primary;
+              color: white;
+            }
           }
         }
       }

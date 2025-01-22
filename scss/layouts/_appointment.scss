@@ -1,7 +1,9 @@
 .appointment {
   @include box-flex;
+  margin-bottom: $standard-margin;
   width: 100%;
   gap: 0;
+
   @include responsive(0, 600px) {
     flex-direction: column;
   }

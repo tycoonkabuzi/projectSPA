@@ -75,7 +75,7 @@ body {
 }
 
 .intro-texts {
-  width: 90%;
+  width: 35%;
   text-align: center;
   margin: auto;
 
@@ -90,7 +90,7 @@ body {
 }
 
 .longer-width {
-  width: 60%;
+  width: 40%;
   @include responsive(0, 600px) {
     width: 90%;
   }
